@@ -54,7 +54,7 @@ def analyze_article(text):
 
 # ================= 页面布局 (UI) =================
 
-st.set_page_config(page_title="文章结构化提取工具", layout="wide")
+st.set_page_config(page_title="云南农信深度阅读助手", layout="wide")
 
 st.title("📑 云南农信深度阅读助手 (YNRCC-DeepReader)")
 st.markdown("上传文章或粘贴文本，AI 帮你提取 **“核心要义”以及“是什么、为什么、做什么、怎么做、做成什么样”**。")
@@ -81,7 +81,7 @@ if start_btn:
     if not user_text:
         st.warning("请先输入文章内容！")
     else:
-        with st.spinner("DeepSeek 正在思考中..."):
+        with st.spinner("正在思考解析中..."):
             result = analyze_article(user_text)
 
         if result:
@@ -122,4 +122,5 @@ if start_btn:
                 mime="application/json"
 
             )
+
 
