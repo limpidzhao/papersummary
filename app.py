@@ -56,8 +56,8 @@ def analyze_article(text):
 
 st.set_page_config(page_title="文章结构化提取工具", layout="wide")
 
-st.title("📑 深度阅读助手 (DeepReader)")
-st.markdown("上传文章或粘贴文本，AI 帮你提取 **“是什么、为什么、怎么做”**。")
+st.title("📑 云南农信深度阅读助手 (YNRCC-DeepReader")
+st.markdown("上传文章或粘贴文本，AI 帮你提取 **“核心要义”以及“是什么、为什么、做什么、怎么做、做成什么样”**。")
 
 # --- 左侧栏：设置与输入 ---
 with st.sidebar:
@@ -120,4 +120,5 @@ if start_btn:
                 data=json_str,
                 file_name="analysis_report.json",
                 mime="application/json"
+
             )
