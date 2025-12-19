@@ -26,10 +26,10 @@ def analyze_article(text):
     请务必返回标准的 JSON 格式数据，不要包含 Markdown 标记。
     JSON 结构必须包含以下字段：
     {
-        "core_summary": "文章的核心要义（100字以内）",
+        "core_summary": "文章的核心要义（150字以内）",
         "what": "是什么：文章讨论的核心概念、背景或定义",
-        "why": "为什么：做这件事的原因、背景痛点或必要性",
-        "todo": "做什么：具体的目标、任务方向或重点工程",
+        "why": "为什么：文章所述内容的原因、背景痛点或必要性",
+        "todo": "做什么：文章所述问题具体的目标、任务方向或重点工程",
         "how": "怎么做：具体的实施路径、手段、措施或抓手（分点概括）",
         "result": "做成怎么样：预期的成效、量化指标或未来愿景"
     }
@@ -57,7 +57,7 @@ def analyze_article(text):
 st.set_page_config(page_title="云南农信深度阅读助手", layout="wide")
 
 st.title("📑 云南农信深度阅读助手 (YNRCC-DeepReader)")
-st.markdown("上传文章或粘贴文本，AI 帮你提取 **“核心要义”以及“是什么、为什么、做什么、怎么做、做成什么样”**。")
+st.markdown("上传文章或粘贴文本，系统会自动提取该篇内容的 **“核心要义”以及“是什么、为什么、做什么、怎么做、做成什么样”**。")
 
 # --- 左侧栏：设置与输入 ---
 with st.sidebar:
@@ -122,5 +122,6 @@ if start_btn:
                 mime="application/json"
 
             )
+
 
 
