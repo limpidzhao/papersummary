@@ -10,7 +10,7 @@ XIAOMI_API_KEY = "sk-spsavmnsrw0ls9z194hvy431gyekpx28wz5g9yedi8yp9cpq"
 # 例如可能是: https://api.xiaomi.com/v1 或类似地址
 XIAOMI_BASE_URL = "https://api.xiaomi.ai/v1" 
 # 模型名称 (例如: milm-pro, milm-6b 等，需查阅文档)
-MODEL_NAME = "milm-pro" 
+MODEL_NAME = "mimo-v2-flash" 
 
 # ================= 核心逻辑 =================
 
